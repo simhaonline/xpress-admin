@@ -35,11 +35,11 @@
       <el-table-column align="center" label="操作" width="230" class-name="small-padding fixed-width">
         <template slot-scope="{row}">
           <router-link :to="'/category/edit/' + row.id">
-            <el-button type="primary" size="mini" icon="el-icon-edit">
+            <el-button style="margin:2px;" type="primary" size="mini" icon="el-icon-edit">
               编辑
             </el-button>
           </router-link>
-          <el-button type="danger" size="mini" icon="el-icon-delete" @click="delCategory(row.id)">
+          <el-button style="margin:2px;" type="danger" size="mini" icon="el-icon-delete" @click="delCategory(row.id)">
             删除
           </el-button>
         </template>

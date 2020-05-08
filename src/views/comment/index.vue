@@ -39,10 +39,10 @@
 
       <el-table-column align="center" label="操作" width="230" class-name="small-padding fixed-width">
         <template slot-scope="{row}">
-          <el-button type="success" size="mini" icon="el-icon-check" :disabled="row.status === 'approve'" @click="approveCmt(row.id)">
+          <el-button style="margin:2px;" type="success" size="mini" icon="el-icon-check" :disabled="row.status === 'approve'" @click="approveCmt(row.id)">
             审核
           </el-button>
-          <el-button type="danger" size="mini" icon="el-icon-delete" @click="delComment(row.id)">
+          <el-button style="margin:2px;" type="danger" size="mini" icon="el-icon-delete" @click="delComment(row.id)">
             删除
           </el-button>
         </template>
